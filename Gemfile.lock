@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    dinabaztag (0.0.1)
+      curb (>= 0.8.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    curb (0.8.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dinabaztag!
