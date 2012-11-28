@@ -10,11 +10,9 @@ Gem::Specification.new do |s|
   s.description = "Dinabaztag is a Ruby Wrapper for Nabaztag API!"
   s.authors     = ["Miklós Beöthy"]
   s.email       = 'beothy.miklos@digitalnatives.hu'
-  s.homepage    = 'http://rubygems.org/gems/dinabaztag'
+  s.homepage    = 'https://github.com/digitalnatives/dinabaztag'
   s.files         = `git ls-files`.split("\n").sort
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-
-  s.add_dependency("curb", ">= 0.8.1")
 end

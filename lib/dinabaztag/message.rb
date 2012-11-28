@@ -1,4 +1,4 @@
-require 'curl'
+require 'net/http'
 require 'uri'
 require 'cgi'
 
@@ -46,9 +46,7 @@ module Dinabaztag
 
         puts url
 
-        http_curl = Curl::Easy.new( url )
-        http_curl.timeout = 5 # total timeout in sec
-        http_curl.perform
+        Net::HTTP.get( URI(url) )
         
         reset
       rescue => e
