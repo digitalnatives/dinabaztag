@@ -43,10 +43,8 @@ module Dinabaztag
         exec_string = CGI.escape( exec_commands.join("\n") )
         
         url = "http://www.nabaztag.com/nabaztags/#{self.api_key}/exec?command=#{exec_string}"
-
-        puts url
-
         Net::HTTP.get( URI(url) )
+        # puts url
         
         reset
       rescue => e
